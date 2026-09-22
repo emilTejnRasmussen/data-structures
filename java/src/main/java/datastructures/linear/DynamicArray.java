@@ -2,6 +2,7 @@ package datastructures.linear;
 
 import datastructures.interfaces.List;
 
+import java.util.Arrays;
 import java.util.Objects;
 
 public class DynamicArray<T> implements List<T>
@@ -116,6 +117,25 @@ public class DynamicArray<T> implements List<T>
     {
         elements = new Object[elements.length];
         size = 0;
+    }
+
+    @Override
+    public String toString()
+    {
+        StringBuilder builder = new StringBuilder("[");
+
+        for (int i = 0; i < size; i++)
+        {
+            builder.append(elements[i]);
+
+            if (i < size - 1)
+            {
+                builder.append(", ");
+            }
+        }
+
+        builder.append("]");
+        return builder.toString();
     }
 
     private void ensureCapacity() {
