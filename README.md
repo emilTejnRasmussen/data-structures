@@ -18,9 +18,11 @@ Currently working on the Java implementation.
 
 | Type | Array-backed | Linked |
 |---|---|---|
-| List | [Dynamic Array](java/src/main/java/datastructures/linear/list/DynamicArray.java) | [Singly Linked List](java/src/main/java/datastructures/linear/list/SinglyLinkedList.java), [Doubly Linked List](java/src/main/java/datastructures/linear/list/DoublyLinkedList.java) |
-| Stack | [Array Stack](java/src/main/java/datastructures/linear/stack/ArrayStack.java) | [Linked Stack](java/src/main/java/datastructures/linear/stack/LinkedStack.java) |
-| Queue | [Array Queue](java/src/main/java/datastructures/linear/queue/ArrayQueue.java) | [Linked Queue](java/src/main/java/datastructures/linear/queue/LinkedQueue.java) |
+| [List](docs/linear/lists.md) | [Dynamic Array](java/src/main/java/datastructures/linear/list/DynamicArray.java) | [Singly Linked List](java/src/main/java/datastructures/linear/list/SinglyLinkedList.java), [Doubly Linked List](java/src/main/java/datastructures/linear/list/DoublyLinkedList.java) |
+| [Stack](docs/linear/stacks.md) | [Array Stack](java/src/main/java/datastructures/linear/stack/ArrayStack.java) | [Linked Stack](java/src/main/java/datastructures/linear/stack/LinkedStack.java) |
+| [Queue](docs/linear/queues.md) | [Array Queue](java/src/main/java/datastructures/linear/queue/ArrayQueue.java) | [Linked Queue](java/src/main/java/datastructures/linear/queue/LinkedQueue.java) |
+
+See [Linear Data Structures](docs/linear/README.md) for an overview.
 
 ### Planned
 
