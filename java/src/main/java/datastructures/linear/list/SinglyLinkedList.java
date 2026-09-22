@@ -1,4 +1,4 @@
-package datastructures.linear.List;
+package datastructures.linear.list;
 
 import datastructures.interfaces.List;
 
