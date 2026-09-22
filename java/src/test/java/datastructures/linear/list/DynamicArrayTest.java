@@ -1,6 +1,7 @@
-package datastructures.linear;
+package datastructures.linear.list;
 
 import datastructures.interfaces.List;
+import datastructures.linear.List.DynamicArray;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 

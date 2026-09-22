@@ -1,4 +1,4 @@
-package datastructures.linear;
+package datastructures.linear.list;
 
 import datastructures.interfaces.List;
 import org.junit.jupiter.api.BeforeEach;

@@ -1,6 +1,7 @@
-package datastructures.linear;
+package datastructures.linear.list;
 
 import datastructures.interfaces.List;
+import datastructures.linear.List.SinglyLinkedList;
 
 class SinglyLinkedListTest extends ListTest
 {

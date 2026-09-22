@@ -1,8 +1,7 @@
-package datastructures.linear;
+package datastructures.linear.List;
 
 import datastructures.interfaces.List;
 
-import java.util.Arrays;
 import java.util.Objects;
 
 public class DynamicArray<T> implements List<T>
