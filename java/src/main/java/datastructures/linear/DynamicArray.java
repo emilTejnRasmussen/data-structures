@@ -33,7 +33,7 @@ public class DynamicArray<T> implements List<T>
         ensureInsertIndexIsInBounds(index);
         ensureCapacity();
 
-        for (int i = size; i > index ; i--)
+        for (int i = size; i > index; i--)
         {
             elements[i] = elements[i - 1];
         }
@@ -82,17 +82,12 @@ public class DynamicArray<T> implements List<T>
     }
 
     @Override
-    public boolean contains(T value)
-    {
-        return indexOf(value) != -1;
-    }
-
-    @Override
     public int indexOf(T value)
     {
         for (int i = 0; i < size; i++)
         {
-            if (Objects.equals(elements[i], value)){
+            if (Objects.equals(elements[i], value))
+            {
                 return i;
             }
         }
@@ -104,12 +99,6 @@ public class DynamicArray<T> implements List<T>
     public int size()
     {
         return size;
-    }
-
-    @Override
-    public boolean isEmpty()
-    {
-        return size == 0;
     }
 
     @Override
@@ -138,8 +127,10 @@ public class DynamicArray<T> implements List<T>
         return builder.toString();
     }
 
-    private void ensureCapacity() {
-        if (size < elements.length){
+    private void ensureCapacity()
+    {
+        if (size < elements.length)
+        {
             return;
         }
 
@@ -150,14 +141,18 @@ public class DynamicArray<T> implements List<T>
         elements = newArray;
     }
 
-    private void ensureIndexIsInBounds(int index) {
-        if (index < 0 || index >= size) {
+    private void ensureIndexIsInBounds(int index)
+    {
+        if (index < 0 || index >= size)
+        {
             throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
         }
     }
 
-    private void ensureInsertIndexIsInBounds(int index) {
-        if (index < 0 || index > size) {
+    private void ensureInsertIndexIsInBounds(int index)
+    {
+        if (index < 0 || index > size)
+        {
             throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
         }
     }

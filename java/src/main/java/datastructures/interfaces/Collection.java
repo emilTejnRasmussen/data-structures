@@ -3,6 +3,11 @@ package datastructures.interfaces;
 public interface Collection<T>
 {
     int size();
-    boolean isEmpty();
+
+    default boolean isEmpty()
+    {
+        return size() == 0;
+    }
+
     void clear();
 }

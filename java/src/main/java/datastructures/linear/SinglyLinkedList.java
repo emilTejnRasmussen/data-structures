@@ -124,12 +124,6 @@ public class SinglyLinkedList<T> implements List<T>
     }
 
     @Override
-    public boolean contains(T value)
-    {
-        return indexOf(value) != -1;
-    }
-
-    @Override
     public int indexOf(T value)
     {
         Node<T> node = head;
@@ -152,12 +146,6 @@ public class SinglyLinkedList<T> implements List<T>
     public int size()
     {
         return size;
-    }
-
-    @Override
-    public boolean isEmpty()
-    {
-        return size == 0;
     }
 
     @Override
